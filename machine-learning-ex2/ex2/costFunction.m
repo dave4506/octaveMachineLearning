@@ -20,6 +20,10 @@ grad = zeros(size(theta));
 % Note: grad should have the same dimensions as theta
 %
 alfa = X*theta;
+size(X)
+size(theta)
+size(alpha)
+size(y)
 bravo = -1*y'*log(sigmoid(alfa));
 charlie = (1-y')*log(1-sigmoid(alfa));
 J = (bravo - charlie)/m;
